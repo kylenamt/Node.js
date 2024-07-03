@@ -140,7 +140,7 @@ function resetData(obj:any):any{
     }
     return obj;
 }
-
+//Test 11
 let arrayObj = [34,123,6,42,4,545323,34,24,234,3];
 let testObj = {
     name: 'Trung',

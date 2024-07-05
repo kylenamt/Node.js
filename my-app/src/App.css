@@ -7,6 +7,45 @@
   pointer-events: none;
 }
 
+.Login-Box{
+  display: block;
+  align-items: center;
+  width: 61vh;
+  height: 34vw;
+  top: 175px;
+  left: 483px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #fff;
+}
+#decoration-rectangle{
+  border: 6px solid #F8D442;
+  width: 39px;
+  height: 0px;
+  top: 219px;
+  left: 549px;
+  gap: 0px;
+  border: 6px 0px 0px 0px;
+  opacity: 0px;
+  angle: -90 deg;
+
+}
+.Login-title{
+  /* font-family: Montserrat; */
+  width: 330px;
+  height: 39px;
+  top: 219px;
+  left: 561.5px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+  text-align: center;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +53,8 @@
 }
 
 .App-header {
-  background-color: #FEAF00;
+  /* background-color: #FEAF00; */
+  background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
   min-height: 100vh;
   display: flex; 
   flex-direction: column;

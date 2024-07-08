@@ -4,17 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <link href="./resources/css/dashboard.css" type="text/css" rel="stylesheet">
-    <title>Sign In</title>
+    <title>Dash board</title>
+    
 </head>
 
 <body>
    <div class="dash-board wrapper">
         <div class ="side-bar">
             <h1 class = "side-bar title">CRUD OPERATIONS</h1>
-            <div class = "profile-picture">
-                <img class = "picture"  src = "https://s3-alpha-sig.figma.com/img/7f02/c446/9c5672219055d43b0ffb2caf907f4b0d?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gAKMd9mvoWCcnyIHEZ1QZ1qK-iIwmvu3p6IQACZvWMPa9qi0pn6CF8wB6wPB-6aE75R9dc7VMTbHN7BoCnLI3yVttDcw5FpDOtEOB3T91P5bB4EiZ-wjYeZ5GfA9GmvqtY4tn23ighTjygXKYsX8cvIAg1RePGQpovaCHYdSXQb6NLUtabCcBR0LKuLgVaN2V18IFyGTg9GndMJ~vPE5gSN4wVgvW9M0HMkPXLlnseE~hL~R67vbNJB5OhoRfnU~kkvRd2N26ZhrB7AqCNzLxk~u-oT6PRcUDFf8882FLcQLTCt-XUHvvGrbL0o4n69o2cSY2zFKcoyr~LSIot2n1g__"
-                alt = "profile picture"> 
-                <img src = "crud-operation\resources\pictures\9c5672219055d43b0ffb2caf907f4b0d.jpg">
+            <div class = "profile">
+                <div class = picture-container>
+                    <img class = "picture"  src = "resources/pictures/9c5672219055d43b0ffb2caf907f4b0d.jpg"
+                    alt = "profile picture">
+                </div>
+                <p class = "name">Karthi Madesh</p>
+                <p class = "role">Admin</p>
+            </div>
+            <div class = "page-menu">
+                <ul>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\home.svg>
+                        <p>Home</p>
+                    </li>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\bookmark.svg>
+                        <p>Course</p>
+                    </li>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\graduationcap.svg>
+                        <p>Students</p>
+                    </li>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\usd.svg>
+                        <p>Payment</p>
+                    </li>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\report.svg>
+                        <p>Report</p>
+                    </li>
+                    <li class = "page-options">
+                        <img src = resources\icons\sidebar\settings.svg>
+                        <p>Settings</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class = "page-options last">
+                        <p>Logout</p>
+                        <img src = resources\icons\sidebar\logout.svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "main-page">
+            <div class = "nav-bar">
+                <img src = resources\icons\navbar\return.svg>
+                <div class = "nav-bar-right">
+                    <div class = "textfield">
+                        <input type="text" placeholder="Search...">
+                        <img src= resources\icons\navbar\search.svg>
+                    </div>
+                    <img src =  resources\icons\navbar\notification.svg>
+                </div>
+            </div>
+            <div class = "content">
+                <div class = "content-menu">
+
+                    <div class = "content-options _1">
+                        <div class = "icon">
+                            <img src = resources\icons\content\graduationcap.svg>
+                            <p>Students</p>
+                        </div>
+                        <div class = "statistic">
+                            <p>243</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "content-options _2">
+                        <div class = "icon">
+                            <img src = resources\icons\content\bookmark.svg>
+                            <p>Course</p>
+                        </div>
+                        <div class = "statistic">
+                            <p>243</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "content-options _3">
+                        <div class = "icon">
+                            <img src = resources\icons\content\usd.svg>
+                            <p>Payment</p>
+                        </div>
+                        <div class = "statistic">
+                            <p>243</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "content-options _4">
+                        <div class = "icon">
+                            <img src = resources\icons\content\person.svg>
+                            <p>Users</p>
+                        </div>
+                        <div class = "statistic">
+                            <p>243</p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
    </div>

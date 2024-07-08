@@ -1,74 +1,15 @@
-@font-face {
-    font-family: Montserrat ;
-    src: url(../font/Montserrat-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: MontserratBold ;
-    src: url(../font/Montserrat-Bold.ttf) format('truetype');
-}
-body{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+.nav-bar-right.textfiled{
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    height: 37px;
+    margin: 27px;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
-    margin: 0px;
+    /* width: 100%; */
+    padding: 15px;
 }
-
-.Sign-in.-form{
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 475px;
-    min-height: 550px;
-    width: 34vw;
-    height: 61vh;
-    border-radius: 20px;
-    box-shadow: 2px 5px 10px 0px #0000001A;
-    padding: 20px;
-}
-.Sign-in -title{
-    font-family: MontserratBold;
-    font-size: 32px;
-    /* max-height: 30px; */
-    /* line-height: 1; */
-    text-align: center;
-    border-left: 5px solid #F8D442;
-}
-.Sign-in{
-    font-family: MontserratBold;
-    font-size: 22px;
-    text-align: center;
-}
-.Sign-in -msg{
-    font-family: Montserrat;
-    font-size: 14px;
-    text-align: center;
-    color: #6C6C6C;
-}
- 
-.SiInput{
-    display: flex;
-    flex-direction: column;
-    font-family: Montserrat;
-    font-size: 14px;
-    padding: 5px 0px 5px 0px;
-}
-.Button-container{
-    display: flex;
+.content-page{
+    height: 100%;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.Sign-in-button{
-    width: 100%;
-    background: #FEAF00;
-    color: #fff;
-    border: none;
-}
-.Reset-password{
-    font-family: Montserrat;
-    font-size: 14px;
+    background: #FDFDFD;
+    ;
 }

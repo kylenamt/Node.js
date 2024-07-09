@@ -183,8 +183,8 @@
 .content-options {
   height: 100%;
   flex: 1;
-  /* width: 255px; */
-  /* background: #599bc6; */
+  width: 255px;
+  background: #599bc6;
   border-radius: 8px;
   margin: 15px;
   display: flex;

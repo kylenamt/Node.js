@@ -17,7 +17,7 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
 }
 
@@ -32,47 +32,46 @@ body{
 
 .sign-in.form{
     max-width: 475px;
-    width: 475px;
+    width: 100%;
     background: #fff;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     border-radius: 20px;
     padding: 30px;
     box-shadow: 2px 5px 10px 0px #0000001A;
-
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 36px;
 }
 .sign-in.title{
+    width: 342px;
     font-family: MontserratBold;
     font-size: 32px;
-    font-weight: 700;
-    line-height: 39.01px;
-    text-align: left;
-    text-align: center;
+    padding-left: 12px;
+    margin-bottom: 43px;
     border-left: 6px solid #F8D442;   
-    margin: 44px;
     text-wrap: nowrap;
-    padding-left: 10px;
+    text-align: center;
 }
-.sign-in.msg.one{
-    font-family: Montserrat;
-
+.sign-in.msg._1{
+    font-family: MontserratMedium;
     font-size: 22px;
     font-weight: 600;
     line-height: 26.82px;
-    text-align: left;
-
-    font-size: 22px;
     text-align: center;
+    margin-bottom: 9px;
 }
-.sign-in.msg.two{
+.sign-in.msg._2{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
     text-align: center;
     color: #6C6C6C;
-    margin-bottom: 30px ;
 }
 .sign-in.input{
     display: flex;
@@ -81,11 +80,9 @@ body{
     align-items: flex-start;
     font-family: MontserratMedium;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 17.07px;
     text-align: left;
     color: #6C6C6C;
-    margin: 20px 0px;
+    margin-top: 20px;
 
 }
 .textfield{
@@ -94,6 +91,9 @@ body{
     border-radius: 4px;
     padding: 15px;
     margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #CDCDCD;
 }
 .sign-in.button{
     font-family:Montserrat;
@@ -104,13 +104,13 @@ body{
     border: none;
     border-radius: 4px;
     padding: 15px;
-    margin: 10px 0px;
+    margin: 30px 0px;
 }
 .sign-in.reset-password{
     font-family: Montserrat;
     font-size: 14px;
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 11px;
 }
 .reset-redirect{
     font-family: MontserratMedium;

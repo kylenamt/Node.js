@@ -12,8 +12,13 @@
     <title>Payment</title>
   </head>
   <body>
-    <div class="dash-board wrapper">
-      <div class="side-bar">
+    <div class="wrapper">
+      <div class="menu-button open" id="menu-button" onclick="openNav()">
+        <span id="_1"></span>
+        <span id="_2"></span>
+        <span id="_3"></span>
+      </div>
+      <div id="side-bar" class="side-bar">
         <div class="title-container">
           <h1 class="title">CRUD OPERATIONS</h1>
         </div>
@@ -29,43 +34,53 @@
           <p class="role">Admin</p>
         </div>
         <div class="page-menu">
-          <ul>
-            <button class="page-options">
+          <div>
+            <a class="page-options dashboard" 
+            id = "page-options dashboard"
+            href="Dashboard.html">
               <img src="resources\icons\sidebar\home.svg" />
               <p>Home</p>
-            </button>
-            <button class="page-options">
+            </a>
+            <a class="page-options" href="Dashboard.html">
               <img src="resources\icons\sidebar\bookmark.svg" />
               <p>Course</p>
-            </button>
-            <button class="page-options">
+            </a>
+            <a class="page-options student"
+            id = "page-options student"
+            href="Student.html">
               <img src="resources\icons\sidebar\graduationcap.svg" />
               <p>Students</p>
-            </button>
-            <button class="page-options">
+            </a>
+            <a class="page-options payment" 
+            id = "page-options payment"
+            href="Payment.html">
               <img src="resources\icons\sidebar\usd.svg" />
               <p>Payment</p>
-            </button>
-            <button class="page-options">
+            </a>
+            <a class="page-options" href="">
               <img src="resources\icons\sidebar\report.svg" />
               <p>Report</p>
-            </button>
-            <button class="page-options">
+            </a>
+            <a class="page-options" href="">
               <img src="resources\icons\sidebar\settings.svg" />
               <p>Settings</p>
-            </button>
-          </ul>
-          <ul>
-            <button class="page-options last">
+            </a>
+          </div>
+          <div>
+            <a class="page-options last" href="Signin.html">
               <p>Logout</p>
               <img src="resources\icons\sidebar\logout.svg" />
-            </button>
-          </ul>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="main-page">
+      <div id="main-page" class="main-page">
         <div class="nav-bar">
-          <img src="resources\icons\navbar\return.svg" />
+          <img
+            id="toggle-menu"
+            src="resources\icons\navbar\return.svg"
+            onclick="closeNav()"
+          />
           <div class="nav-bar-right">
             <div class="textfield">
               <input type="text" placeholder="Search..." />
@@ -76,7 +91,7 @@
         </div>
         <div class="content">
           <div class="function-bar">
-            <p>Students List</p>
+            <p>Payment Details</p>
             <div class="function-block">
               <img src="resources\icons\students\sort.svg" alt="sort" />
             </div>
@@ -267,3 +282,4 @@
     </div>
   </body>
 </html>
+<script src="menu.js"></script>

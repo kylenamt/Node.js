@@ -1,24 +1,26 @@
 /* MAIN PAGE CONTENT */
+img{
+  cursor: pointer;
+}
 .content {
   height: 100%;
   width: 100%;
   background: #f8f8f8;
   padding: 30px;
 }
-
 /* FUNCTION BAR */
 .function-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  padding-bottom: 15px;
 }
 .function-bar p {
   font-family: MontserratBold;
   font-size: 22px;
   text-wrap: nowrap;
   padding-right: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .function-block {
   display: flex;
@@ -53,8 +55,10 @@
 
 /* CONTENT LIST */
 .student-table {
+  width: 100%;
+  height: 70vh;
   display: flex;
-  overflow-x: scroll;
+  overflow: auto;
 }
 table {
   width: 100%;
@@ -101,74 +105,7 @@ td {
   position: relative;
   top: -20%;
 }
-
-@media (max-width: 575px) {
-  /* SIDE BAR */
-  .side-bar {
-    max-width: 80px;
-    width: 80px;
-  }
-  .title-container {
-    max-width: 80px;
-    padding: 0px;
-    margin: 0px;
-    display: none;
-  }
-  .title-container .title {
-    font-family: MontserratBold;
-    font-size: 20px;
-    border-left: 4px solid #f8d442;
-    margin-top: 18px;
-    padding-left: 12px;
-  }
-  .profile {
-    padding: 10px;
-  }
-  .name {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 14px;
-  }
-  .role {
-    padding-top: 10px;
-    font-size: 12px;
-  }
-  .page-options p {
-    display: none;
-  }
-  .page-menu {
-    padding: 10px;
-  }
-  .page-options {
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
-  }
-  .page-options img {
-    margin: 0px;
-  }
-  .page-options.last {
-    padding: 0px;
-  }
-  .page-options.last img {
-    margin: 0px;
-  }
-  /* NAV BAR */
-  .nav-bar {
-    padding: 15px;
-  }
-  .nav-bar img {
-    padding: 0px;
-  }
-  .nav-bar-right img {
-    padding: 0px;
-    margin-right: 0px;
-  }
-
-  .textfield {
-    margin: 10px;
-    padding: 0px 10px;
-  }
+@media (max-width:575px){
   .function-bar {
     flex-direction: column;
   }

@@ -1,24 +1,25 @@
 /* MAIN PAGE CONTENT */
+
 .content {
   height: 100%;
   width: 100%;
   background: #f8f8f8;
-  padding: 15p;
-  overflow-y: scroll;
+  padding: 15px;
+  overflow-y: auto;
 }
 .content-menu {
   width: 100%;
+  max-height: 50vh ;
   height: 157px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 .content-options {
-  height: 100%;
   flex: 1;
-  /* max-width: 255px; */
+  max-width: 450px;
   min-width: 210px;
   width: 100%;
   background: #599bc6;
@@ -26,6 +27,8 @@
   margin: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 5px 10px 0px #0000001A;
+  cursor: pointer;
 }
 .content-options._1 {
   background: #f0f9ff;
@@ -46,8 +49,6 @@
 .icon {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 17.07px;
   text-align: left;
   color: #6c6c6c;
   padding: 20px;
@@ -71,70 +72,15 @@
   padding: 3px 5px;
   font-size: 18px;
 }
-@media (max-width: 575px) {
-  /* SIDE BAR */
-  .side-bar {
-    max-width: 80px;
-  }
-  .title-container {
-    max-width: 80px;
-    padding: 0px;
-    margin: 0px;
-    display: none;
-  }
-  .title-container .title {
-    font-family: MontserratBold;
-    font-size: 20px;
-    border-left: 4px solid #f8d442;
-    margin-top: 18px;
-    padding-left: 12px;
-  }
-  .profile {
-    padding: 10px;
-  }
-  .name {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 14px;
-  }
-  .role {
-    padding-top: 10px;
-    font-size: 12px;
-  }
-  .page-options p {
-    display: none;
-  }
-  .page-menu {
-    padding: 10px;
-  }
-  .page-options {
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
-  }
-  .page-options img {
-    margin: 0px;
-  }
-  .page-options.last {
-    padding: 0px;
-  }
-  .page-options.last img {
-    margin: 0px;
-  }
-  /* NAV BAR */
-  .nav-bar {
-    padding: 15px;
-  }
-  .nav-bar img {
-    padding: 0px;
-  }
-  .nav-bar-right img {
-    padding: 0px;
-    margin-right: 0px;
-  }
-
-  .textfield {
-    margin: 10px;
-    padding: 0px 10px;
+/* @media (max-width:1259px){
+  .content-options{
+    max-width: calc((100% - 120px) / 3);
   }
 }
+@media (max-width:1019px){
+  .content-options{
+    max-width: calc((100% - 90px) / 2);
+  }
+} */
+
+

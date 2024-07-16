@@ -15,22 +15,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
+html,body {
   min-height: 100vh;
   width: 100%;
 }
-html {
+html{
   font-size: 16px;
 }
-body {
+body{
   font-family: Montserrat;
 }
 .wrapper {
-  position: relative;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
   min-height: 100vh;
   width: 100%;
   background-color: #fff;
@@ -72,7 +73,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 18px 0px;
-  transition: 0.5s;
+  transition: .5s;
 }
 .title-container {
   width: 100%;
@@ -88,10 +89,7 @@ body {
   border-left: 4px solid #f8d442;
   padding-left: 12px;
 }
-.menu-button {
-  position: absolute;
-  top: 20px;
-  /* left: 20px; */
+.title-container .button{
   max-width: 40px;
   max-height: 25px;
   width: 40px;
@@ -101,16 +99,15 @@ body {
   justify-content: space-between;
   align-items: center;
   display: none;
-  z-index: 3;
 }
-.menu-button span {
+.title-container .button span{
   width: 40px;
   max-height: 3px;
   height: 5px;
   background: #000;
   border-radius: 100vw;
-  transition: 0.5s;
 }
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -137,7 +134,7 @@ body {
 .name {
   font-family: MontserratBold;
   font-size: 1.06rem;
-  padding-bottom: 18px;
+  padding-bottom: 18px ;
 }
 .role {
   font-family: MontserratMedium;
@@ -166,11 +163,9 @@ body {
   padding-left: 41px;
   border: none;
   background: transparent;
-  cursor: pointer;
-
 }
 .page-options:hover {
-  background: #fedb90;
+  background: #feaf00;
 }
 .page-options img {
   flex-basis: 15%;
@@ -204,6 +199,7 @@ body {
 .nav-bar {
   position: sticky;
   top: 0;
+  /* left: 0; */
   width: 100%;
   height: 60px;
   display: flex;
@@ -213,13 +209,11 @@ body {
   background-color: #fff;
   z-index: 2;
 }
-#toggle-menu {
-  height: 40%;
-  padding: 0px 30px;
-  transition: 0.75s;
-  cursor: pointer;
+.nav-bar img {
+  padding: 30px;
+  transition: .75s;
 }
-.nav-bar img:hover {
+.nav-bar img:hover{
   filter: brightness(50%);
 }
 /* .nav-bar image */
@@ -239,7 +233,7 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   height: 37px;
-  margin: 0px 27px;
+  margin: 27px;
   padding: 0px 15px;
   background: none;
 }
@@ -255,51 +249,71 @@ body {
 @media (max-width: 768px) {
   /* SIDE BAR */
   .side-bar {
-    /* position: relative;
+    position: relative;
     top:0;
-    left: 0; */
+    left: 0;
     max-width: 100%;
-    width: 0%;
+    width: 0px;
+    padding: 18px;
   }
+  .title-container .button{
+    display: flex;
+  }
+  .main-page{
+    flex: 0;
+  }
+  /* 
   .title-container {
-    padding: 0px 18px;
+    max-width: 80px;
+    padding: 0px;
+    margin: 0px;
   }
-  .menu-button {
-    /* left: 20px; */
-    display: flex;
-  }
-  .menu-button.close {
-    right: 20px;
-    display: flex;
-  }
-  .menu-button.open {
-    left: 20px;
-    display: flex;
-  }
-  .menu-button.close span:nth-child(1) {
-    transform: rotate(45deg) translate(0px, 16px);
-  }
-  .menu-button.close span:nth-child(2) {
+  .title-container .title {
     display: none;
   }
-  .menu-button.close span:nth-child(3) {
-    transform: rotate(-45deg) translate(0px, -15px);
+  .title-container .button{
+    display: flex;
   }
-  .main-page {
-    flex:1;
-    width: 0px;
+  .profile {
+    padding: 10px;
   }
+  .name {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .role {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .page-options p {
+    display: none;
+  }
+  .page-menu {
+    padding: 10px;
+  }
+  .page-options {
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .page-options img {
+    margin: 0px;
+  }
+  .page-options.last {
+    padding: 0px;
+  }
+  .page-options.last img {
+    margin: 0px;
+  } */
   /* NAV BAR */
   .nav-bar {
-    justify-content: flex-end;
     padding: 15px;
   }
   .nav-bar img {
-    display: none;
     padding: 0px;
   }
   .nav-bar-right img {
-    display: inline;
     padding: 0px;
     margin-right: 0px;
   }

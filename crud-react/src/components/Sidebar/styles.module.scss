@@ -1,0 +1,136 @@
+/* SIDE BAR*/
+#sideBar {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+
+  max-width: 270px;
+  width: 30%;
+  height: 100vh;
+  padding: 18px 0px;
+  background-color: #f2eae1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.titleContainer {
+  width: 100%;
+  padding-bottom: 54px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .heading {
+    font-family: MontserratBold;
+    font-size: 1.25rem;
+    border-left: 4px solid #f8d442;
+    padding-left: 12px;
+  }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  .pictureFrame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .profilePicture {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top: -20%;
+  }
+  .userName {
+    font-family: MontserratBold;
+    font-size: 1.06rem;
+    padding-bottom: 18px;
+  }
+  .userRole {
+    font-family: MontserratMedium;
+    font-size: 0.875rem;
+    color: #feaf00;
+  }
+}
+
+.pageMenu {
+  height: 100%;
+  max-width: 193px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pageOptions {
+  width: 100%;
+  height: 41px;
+  padding-left: 41px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: MontserratMedium;
+  text-decoration: none;
+
+  color: #000;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: none;
+
+  background: transparent;
+  cursor: pointer;
+  img {
+    max-width: 20px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
+    flex-basis: 15%;
+    margin-right: 15px;
+  }
+}
+.pageOptions:hover {
+    background: #fedb90;
+  }
+.last {
+    margin-bottom: 14px;
+    img {
+      max-width: 20px;
+      max-height: 20px;
+      width: 100%;
+      height: 100%;
+      margin-left: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+  /* SIDE BAR */
+  #sideBar {
+    max-width: 100%;
+    width: 0%;
+  }
+  .titleContainer {
+    padding: 0px 18px;
+  }
+  .menu-button.close {
+    right: 20px;
+    display: flex;
+  }
+}

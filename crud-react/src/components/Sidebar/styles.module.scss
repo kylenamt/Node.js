@@ -22,12 +22,12 @@
 
 .titleContainer {
   width: 100%;
-  padding-bottom: 54px;
+  padding-bottom: 7%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   .heading {
     font-family: MontserratBold;
     font-size: 1.25rem;
@@ -40,11 +40,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 10%;
   .pictureFrame {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/1;
+    display: flex;
+    aspect-ratio: 1/1; 
     max-width: 128px;
     max-height: 128px;
     border-radius: 50%;
@@ -87,6 +88,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
   font-family: MontserratMedium;
   text-decoration: none;
 
@@ -104,6 +106,9 @@
     height: 100%;
     flex-basis: 15%;
     margin-right: 15px;
+  }
+  &.active{
+    background-color: #feaf00;
   }
 }
 .pageOptions:hover {

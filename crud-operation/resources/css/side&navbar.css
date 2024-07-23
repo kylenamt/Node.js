@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   background-color: #fff;
 }
@@ -49,38 +49,43 @@ body {
   border-radius: 100vw;
   margin-block: 0.2em;
 }
-/* ::-webkit-scrollbar-track:hover {
-  background-color: #aaa;
-} */
 ::-webkit-scrollbar-thumb {
-  background-color: #f8d442;
+  background-color: #4b4737;
   border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f8d4428d;
+  background: #fde27765;
 }
+
 /* SIDE BAR*/
 .side-bar {
+position: sticky;
+top:0;
+bottom: 0;
+
   max-width: 270px;
-  width: 50%;
-  height: 100dvh;
+  width: 35%;
+  height: 100vh;
+  padding: 18px 0px;
   background-color: #f2eae1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 18px 0px;
   transition: 0.5s;
 }
 .title-container {
   width: 100%;
+  padding-bottom: 54px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 54px;
 }
 .title-container .title {
   font-family: MontserratBold;
@@ -148,43 +153,45 @@ body {
   height: 100%;
   max-width: 193px;
   width: 100%;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .page-options {
-  font-family: MontserratMedium;
   width: 100%;
   height: 41px;
-  text-decoration: none;
-  color: #000;
-  border-radius: 4px;
+  padding-left: 41px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-family: MontserratMedium;
+  text-decoration: none;
+
+  color: #000;
+  border-radius: 4px;
   font-size: 0.875rem;
-  padding-left: 41px;
   border: none;
+
   background: transparent;
   cursor: pointer;
-
 }
 .page-options:hover {
   background: #fedb90;
 }
 .page-options img {
-  flex-basis: 15%;
   max-width: 20px;
   max-height: 20px;
   width: 100%;
   height: 100%;
+  flex-basis: 15%;
   margin-right: 15px;
 }
 .page-options.last {
   margin-bottom: 14px;
 }
 .page-options.last img {
-  flex-basis: 15%;
   max-width: 20px;
   max-height: 20px;
   width: 100%;
@@ -206,10 +213,12 @@ body {
   top: 0;
   width: 100%;
   height: 60px;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   background-color: #fff;
   z-index: 2;
 }
@@ -233,14 +242,16 @@ body {
 }
 
 .textfield {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
   height: 37px;
   margin: 0px 27px;
   padding: 0px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
   background: none;
 }
 .textfield input {
@@ -255,18 +266,11 @@ body {
 @media (max-width: 768px) {
   /* SIDE BAR */
   .side-bar {
-    /* position: relative;
-    top:0;
-    left: 0; */
     max-width: 100%;
     width: 0%;
   }
   .title-container {
     padding: 0px 18px;
-  }
-  .menu-button {
-    /* left: 20px; */
-    display: flex;
   }
   .menu-button.close {
     right: 20px;

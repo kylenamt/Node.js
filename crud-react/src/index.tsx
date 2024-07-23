@@ -1,16 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Signin from './pages/Signin';
-import Payment from './pages/Payment';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+// Components
+import Signin from './pages/Signin';
+import Layout from './pages/Layout';
+import {ErrorPage} from './pages/ErrorPage';
+import DashboardCard from './components/Dashboard';
+import PaymentTable from './components/PaymentTable';
+import StudentTable from './components/StudentTable';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      { path: 'dashboard', element: <DashboardCard /> },
+      { path: 'payment', element: <PaymentTable /> },
+      { path: 'students', element: <StudentTable /> },
+    ],
+  },
+  {
+    path: '/signin',
+    element: <Signin />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '*',
+    element: <ErrorPage />,
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Payment/>
+    <App />
   </React.StrictMode>
 );
 

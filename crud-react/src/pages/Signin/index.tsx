@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styles from './styles.module.scss'
 
 function Signin() {
@@ -23,7 +24,7 @@ function Signin() {
             placeholder="Enter your password"
           />
         </div>
-        <a className = {styles.signIn_button} href="Dashboard.html">SIGN IN</a>
+        <NavLink className = {styles.signIn_button} to="/dashboard">SIGN IN</NavLink>
         <div className = {styles.signIn_resetPassword}>
           <label> Forgot your password?</label>
           <a href="https://github.com/" className = {styles.resetRedirect}>Reset Password</a>

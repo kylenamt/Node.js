@@ -5,6 +5,7 @@ import logout from "./logout.svg"
 import report from "./report.svg"
 import setting from "./settings.svg"
 import usd from "./usd.svg"
+
 export const sideBarIcons = {
     bookmark,
     home,

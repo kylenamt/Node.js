@@ -9,9 +9,13 @@ import reportWebVitals from './reportWebVitals';
 import Signin from './pages/Signin';
 import Layout from './pages/Layout';
 import {ErrorPage} from './pages/ErrorPage';
-import DashboardCard from './components/Dashboard';
-import PaymentTable from './components/PaymentTable';
-import StudentTable from './components/StudentTable';
+import Dashboard from './pages/Dashboard';
+import Payment from './pages/Payment';
+import Students from './pages/Students';
+import SideBarStateProvider from './contexts/toggleMenu.context';
+// import DashboardCard from './components/Dashboard';
+// import PaymentTable from './components/PaymentTable';
+// import StudentTable from './components/StudentTable';
 
 const router = createBrowserRouter([
   {
@@ -19,9 +23,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: 'dashboard', element: <DashboardCard /> },
-      { path: 'payment', element: <PaymentTable /> },
-      { path: 'students', element: <StudentTable /> },
+      { path: 'dashboard', element: <Dashboard /> },
+      { path: 'payment', element: <Payment /> },
+      { path: 'students', element: <Students /> },
     ],
   },
   {
@@ -42,7 +46,10 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <SideBarStateProvider> 
+      <App />
+    </SideBarStateProvider>
+    
   </React.StrictMode>
 );
 

@@ -4,6 +4,7 @@ import styles from "./styles.module.scss"
 
 export const ErrorPage: React.FC = () => {
   const navigate = useNavigate();
+  
   return (
     <div className={styles.error}>
       <h1>Oops!</h1>

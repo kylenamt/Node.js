@@ -10,8 +10,8 @@ function DashboardCard() {
   return (
     <div className={styles.content}>
           <div className={styles.contentMenu}>
-            {cards.map(({id,title,icon,statistics,unit},i) =>
-               <InfoCard 
+            {cards.map(({id,title,icon,statistics,unit}) =>
+               <InfoCard  
                 id = {id} icon = {icon} title={title} statistics = {statistics} unit = {unit}/>)}
           </div>
         </div>
